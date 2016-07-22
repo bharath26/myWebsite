@@ -1,36 +1,6 @@
 <html>
 <head>
 	 <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
-	 <script>
-
-var box = document.querySelector('#hello');
-box.addEventListener('mouseenter', function () {
-	alert("mouseenter hello");
-   box.setAttribute('src',"#enemy");
-});
-var box3 = document.querySelector('#hello');
-box3.addEventListener('mouseleave', function () {
-   box3.setAttribute('src',"#inf");
-});
-var box2 = document.querySelector('#text');
-box2.addEventListener('mouseenter', function () {
-	alert("mouseenter hello2");
-   box2.setAttribute('src',"#enemy");
-});
-
-var box4 = document.querySelector('#text');
-box4.addEventListener('mouseleave', function () {
-   box4.setAttribute('src',"#inf");
-});
-
-/*app.all('/posts', function(req, res){
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    res.send(
-        { posts : ... }
-    );
-});*/
-</script>
 
 </head>
   <body>
@@ -57,5 +27,29 @@ box4.addEventListener('mouseleave', function () {
   </a-camera>
   <a-sky src="#enemy-sprite" transparent="true"></a-sky>
 </a-scene>
+	 <script>
+
+var box = document.querySelector('#hello');
+box.addEventListener('mouseenter', function () {
+	alert("mouseenter hello");
+   box.setAttribute('src',"#enemy");
+});
+var box3 = document.querySelector('#hello');
+box3.addEventListener('mouseleave', function () {
+   box3.setAttribute('src',"#inf");
+});
+var box2 = document.querySelector('#text');
+box2.addEventListener('mouseenter', function () {
+	alert("mouseenter hello2");
+   box2.setAttribute('src',"#enemy");
+});
+
+var box4 = document.querySelector('#text');
+box4.addEventListener('mouseleave', function () {
+   box4.setAttribute('src',"#inf");
+});
+
+</script>
+
 </body>
 </html>
