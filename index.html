@@ -2,15 +2,6 @@
 <head>
 	 <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
 	 <script>
-app.all('/posts', function(req, res){
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    res.send(
-        { posts : ... }
-    );
-});
-
-
 
 var box = document.querySelector('#hello');
 box.addEventListener('mouseenter', function () {
@@ -28,6 +19,14 @@ box2.addEventListener('mouseenter', function () {
 var box4 = document.querySelector('#text');
 box4.addEventListener('mouseleave', function () {
    box4.setAttribute('src',"#inf");
+});
+
+app.all('/posts', function(req, res){
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.send(
+        { posts : ... }
+    );
 });
 </script>
 
