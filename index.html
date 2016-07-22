@@ -28,6 +28,15 @@
   <a-sky src="#enemy-sprite" transparent="true"></a-sky>
 </a-scene>
 <script>
+app.all('/posts', function(req, res){
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.send(
+        { posts : ... }
+    );
+});
+
+
 var box = document.querySelector('#hello');
 box.addEventListener('mouseenter', function () {
    box.setAttribute('src',"#enemy");
