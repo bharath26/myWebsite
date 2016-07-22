@@ -1,32 +1,7 @@
 <html>
 <head>
-</head>
-  <body>
- <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
-  <a-scene>
-  <a-assets>
-     
-    <img id="enemy-sprite" crossorigin="" src="myoffice.jpg">
-	
-	<img id="inf" crossorigin="" src="info.png" height="100px" width="100px"  >
-	 <img id="enemy" crossorigin="" src="PROGRESS.png">
-  </a-assets>
-  <a-plane color="#FFF" width="5" height="5" depth="5"
-         position="-10 2 -5"
-         src="#inf" id="hello"></a-plane>
-	
-	<a-plane color="#FFF" width="5" height="5" depth="5"
-         position="-10 20 -20"
-         src="#inf" id="text">
-
-    <!-- Animation will only play when the box is clicked. -->
-  </a-plane>
-  <a-camera position="0 1.8 0">
-    <a-cursor color="#2E3A87">
-  </a-camera>
-  <a-sky src="#enemy-sprite" transparent="true"></a-sky>
-</a-scene>
-<script>
+	 <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+	 <script>
 app.all('/posts', function(req, res){
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
@@ -55,5 +30,31 @@ box4.addEventListener('mouseleave', function () {
    box4.setAttribute('src',"#inf");
 });
 </script>
+
+</head>
+  <body>
+  <a-scene>
+  <a-assets>
+     
+    <img id="enemy-sprite" crossorigin="" src="myoffice.jpg">
+	
+	<img id="inf" crossorigin="" src="info.png" height="100px" width="100px"  >
+	 <img id="enemy" crossorigin="" src="PROGRESS.png">
+  </a-assets>
+  <a-plane color="#FFF" width="5" height="5" depth="5"
+         position="-10 2 -5"
+         src="#inf" id="hello"></a-plane>
+	
+	<a-plane color="#FFF" width="5" height="5" depth="5"
+         position="-10 20 -20"
+         src="#inf" id="text">
+
+    <!-- Animation will only play when the box is clicked. -->
+  </a-plane>
+  <a-camera position="0 1.8 0">
+    <a-cursor color="#2E3A87">
+  </a-camera>
+  <a-sky src="#enemy-sprite" transparent="true"></a-sky>
+</a-scene>
 </body>
 </html>
