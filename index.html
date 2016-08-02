@@ -10,7 +10,7 @@
 	
 		 <img id="inf"  crossorigin="" src="http://i.imgur.com/jSQSUYV.jpg">
 
-	 <img id="enemy"  crossorigin="" src="http://i.imgur.com/RC7tYfy.png">
+	 <img id="enemy"  crossorigin="" src="http://i.imgur.com/8qvm1xZ.png">
   </a-assets>
   <a-plane color="#FFF" width="5" height="5" depth="5"
          position="-10 2 -5"
@@ -29,8 +29,9 @@ var box = document.querySelector('#hello');
 box.addEventListener('mouseenter', function () {
    box.setAttribute('src',"#enemy");
 });
-box.addEventListener('mouseleave', function () {
-   box.setAttribute('src',"#inf");
+var box2 = document.querySelector('#hello');
+box2.addEventListener('mouseleave', function () {
+   box2.setAttribute('src',"#inf");
 });
 
 </script>
